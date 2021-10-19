@@ -1,6 +1,8 @@
 package practice2;
 
 
+import practice3.Circle;
+
 public class Practice2 {
 
     public static int add(int x, int y){
@@ -23,6 +25,8 @@ public class Practice2 {
 
         // Shape object
         Shape s = new Shape(5, "Triangle");
+
+        Circle c = new Circle("circ", 4);
 
     }
 
