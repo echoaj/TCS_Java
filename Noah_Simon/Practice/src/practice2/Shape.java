@@ -1,14 +1,19 @@
 package practice2;
 
+// base case
 public class Shape {
 
-    int amount;
-    String name;
+    static int amount = 0;
+    private String name;
 
     // Constructor
-    Shape(int amount, String nm){
-        this.amount = amount;
+    Shape(String nm){
+        amount += 1;
         name = nm;
+    }
+
+    final void method(){
+
     }
 
 }

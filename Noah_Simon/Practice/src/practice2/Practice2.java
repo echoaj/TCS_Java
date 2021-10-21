@@ -1,32 +1,23 @@
 package practice2;
 
-
-import practice3.Circle;
-
 public class Practice2 {
 
-    public static int add(int x, int y){
-        int total = x + y;
-        return total;
-    }
-
-    public static float add(float x, float y){
-        float total = x + y;
-        return total;
-    }
-
     public static void main(String[] args) {
-
-        int sum = add(40, 60);
-        System.out.println(sum);
-
-        float sum2 = add(53.4f, 75.4f);
-        System.out.println(sum2);
-
         // Shape object
-        Shape s = new Shape(5, "Triangle");
+        Shape s = new Shape("My Shape");
+        Shape s1 = new Shape("My Shape2");
+        Shape s2 = new Shape("My Shape3");
 
-        Circle c = new Circle("circ", 4);
+        System.out.println(Shape.amount);
+        System.out.println(Shape.amount);
+        System.out.println(Shape.amount);
+
+        Shape c = new Circle("Circle", 60);
+        Rectangle r = new Rectangle("Rect", 5, 10);
+
+        Shape[] circArray = {c,c,c,c,s,r,r,s};
+
+
 
     }
 
