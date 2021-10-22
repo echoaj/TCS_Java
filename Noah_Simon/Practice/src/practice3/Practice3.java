@@ -1,6 +1,8 @@
 package practice3;
 
 
+import java.util.ArrayList;
+
 public class Practice3 {
 
 
@@ -26,7 +28,12 @@ public class Practice3 {
         System.out.println(r.getArea());
         r.display();
 
-        
+        ArrayList<Integer> alist = new ArrayList<>();
+        alist.add(50);
+        alist.add(40);
+        alist.forEach( (num) -> {
+            System.out.println(num * 100);
+        } );
 
         // Polymorphism
         Integer num = 5;

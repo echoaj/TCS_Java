@@ -21,4 +21,6 @@ public class Player extends GameObject implements IsVisable{
     public void showSprite() {
         System.out.println("Sprite is visible");
     }
+
+
 }
