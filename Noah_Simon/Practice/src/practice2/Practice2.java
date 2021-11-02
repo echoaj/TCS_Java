@@ -1,5 +1,8 @@
 package practice2;
 
+import java.util.ArrayList;
+import java.util.Hashtable;
+
 public class Practice2 {
 
     public static void main(String[] args) {
@@ -16,6 +19,22 @@ public class Practice2 {
         Rectangle r = new Rectangle("Rect", 5, 10);
 
         Shape[] circArray = {c,c,c,c,s,r,r,s};
+
+        Integer num1 = 4;
+        Float num2 = 3.8f;
+        Double num3 = 76.589045;
+        String str2 = "hello";
+
+        Object[] arr4 = {num1, num2, num3, str2};
+
+//        ArrayList<Integer> alist = new ArrayList<>();
+//        alist.add(30);
+//        alist.add(34);
+//        alist.add(38);
+//
+//        alist.forEach( (num) -> {
+//            System.out.println(num * 100);
+//        } );
 
 
 

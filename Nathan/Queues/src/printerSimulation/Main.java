@@ -13,7 +13,6 @@ public class Main {
 
 
         for(int i = 1; i < 50; i++){
-
             num = rand.nextInt(2);
             if(num == 0){
                 // create new person object
