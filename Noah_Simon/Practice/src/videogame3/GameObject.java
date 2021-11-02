@@ -3,15 +3,10 @@ package videogame3;
 public abstract class GameObject {
     private int x;
     private int y;
-    public String name;
 
     public GameObject(int x, int y){
         this.x = x;
         this.y = y;
-    }
-
-    public GameObject() {
-
     }
 
     // Abstract classes can have implemented methods
