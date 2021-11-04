@@ -17,7 +17,7 @@ public class Queue<T> {
         if(!list.isEmpty()){
             list.remove(0);
         }else{
-            System.out.println("Stack is empty. Can't pop.");
+            System.out.println("Queue is empty. Can't pop.");
             throw new EmptyStackException();
         }
     }
@@ -26,7 +26,7 @@ public class Queue<T> {
         if(!list.isEmpty()){
             return list.get(0);
         }else{
-            System.out.println("Stack Empty. Can't peek.");
+            System.out.println("Queue Empty. Can't peek.");
             throw new EmptyStackException();
         }
     }

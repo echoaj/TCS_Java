@@ -23,31 +23,25 @@ public class BlockChain {
     }
 
     // TODO for loop that checks if blockchain is valid
-    // 1) It should compare its current hash with its recalculated hash
-    // 2) It should compare its current hash with block's prev hash
     public boolean isValid(){
         Block cur = this.tail;
-        boolean valid = true;
         while(cur != this.head){
-            assert cur != null: "Cur is null";
-            if(!cur.hash.equals(cur.get_hash())){
+            if (!cur.hash.equals(cur.get_hash())) {
                 System.out.println("FIRST");
-                valid = false;
-                break;
+                return false;
             }
-            if (!cur.prevHash.equals(cur.prev.get_hash())) {
+            if (!cur.prevHash.equals(cur.prev.get_hash())){
                 System.out.println("SECOND");
-                valid = false;
-                break;
+                return false;
             }
             cur = cur.prev;
         }
-        if(!cur.hash.equals(cur.get_hash())){
-            System.out.println("FIRST");
-            valid = false;
-        }
-        return valid;
+        if(!cur.hash.equals(cur.get_hash()))
+            return false;
+        return true;
     }
+
+
 
     // TODO Proof of work
     // 1) check if first n character match to an array of n zeros

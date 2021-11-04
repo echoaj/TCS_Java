@@ -1,4 +1,5 @@
 package printerSimulation;
+
 import package1.Queue;
 
 import java.util.Random;
@@ -9,7 +10,6 @@ public class Main {
         Random rand = new Random();
         Queue<Person> q = new Queue<>();
         int num;
-
 
 
         for(int i = 1; i < 50; i++){
@@ -31,12 +31,7 @@ public class Main {
                     q.pop();
                     p.finish();
                 }
-
             }
-
         }
-
-
     }
-
 }

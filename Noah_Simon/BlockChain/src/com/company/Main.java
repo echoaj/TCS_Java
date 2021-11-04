@@ -13,15 +13,14 @@ public class Main {
 
 
 //        HACK
-//        bc.tail.prev.prev.destination = "Kevin";
+        bc.tail.prev.destination = "Kevin";
         System.out.print("PREV:\t\t\t\t\t");
         bc.displayPrevHash();
         System.out.print("CURR: ");
         bc.displayHash();
 
-        System.out.println();
         System.out.println(bc.isValid());
 
-//        System.out.println(bc.display());
+//      System.out.println(bc.display());
     }
 }

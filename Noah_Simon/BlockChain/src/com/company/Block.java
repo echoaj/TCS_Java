@@ -53,7 +53,6 @@ public class Block {
             int index = askii % template.length;
             template[index] += askii * 31 - 111 + index;
         }
-
         // User array to pick random character from available
         // and append it to encrypted.
         int i = 0;
